@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Campus Lost & Found 1923051085",
+    "slug": "campus-lost-found-1923051085",
+    "version": "1.0.0",
+    "scheme": "lostfound-1923051085",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/icon.png",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "edu.dntu.lostfound1923051085" },
+    "android": { "package": "edu.dntu.lostfound1923051085", "blockedPermissions": ["android.permission.RECORD_AUDIO"] },
+    "web": { "bundler": "metro", "output": "single", "favicon": "./assets/images/favicon.png" },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      ["expo-image-picker", {
+        "cameraPermission": "Chụp ảnh món đồ thất lạc để văn phòng nhận diện và trả lại đúng người.",
+        "photosPermission": "Chọn ảnh món đồ thất lạc để đính kèm báo cáo tại trường.",
+        "microphonePermission": false
+      }]
+    ]
+  }
+}
